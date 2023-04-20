@@ -53,6 +53,13 @@ ScrollReveal().reveal('.home-img, .home-content, .services-container, .portfolio
 ScrollReveal().reveal('.home-content h1, .about-img' ,{ origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content' ,{ origin: 'right' });
 
+const typed = new Typed(".multiple-text", {
+    strings: ['Frontend Developer', 'Web full-stack', 'youtuber'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
 
 
 
