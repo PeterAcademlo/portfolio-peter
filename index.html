@@ -199,17 +199,20 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://formsubmit.co/e0249e210fd099c0a02c18bfceaea13f" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Full name">
-                <input type="email" placeholder="Email Anddress">
+                <input type="text" placeholder="Full name" name="name">
+                <input type="email" placeholder="Email Anddress" name="email">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Full name">
-                <input type="text" placeholder="Email Anddress">
+                <input type="number" placeholder="Mobile Number" name="mobile">
+                <input type="text" placeholder="Email subject" name="subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="comments" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Enviar" class="btn">
+
+            <input type="hidden" name="_text" value="https://portfolio-peter.netlify.app/">
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </section>
 
