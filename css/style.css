@@ -591,9 +591,11 @@ span{
     }
     .home-img img{
         width: 90vw;
+        position: relative;
+        right: 4rem;
     }
     .about-img img{    
-        width: 70vw;   
+        width: 70vw; 
     }
     .services-box h3 {
         font-size: 3.8rem;
