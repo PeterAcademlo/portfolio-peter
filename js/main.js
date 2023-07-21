@@ -49,12 +49,12 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading' ,{ origin: 'top' });
-ScrollReveal().reveal('.home-img, .home-content, .services-container, .portfolio-box, contact form' ,{ origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .home-content, .services-container, .services-container2, .portfolio-box, contact form' ,{ origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img' ,{ origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content' ,{ origin: 'right' });
 
 const typed = new Typed(".multiple-text", {
-    strings: ['Frontend Developer', 'Web full-stack', 'althlete'],
+    strings: ['Frontend Developer', 'Web full-stack', 'deportista', 'ing. sofware'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
