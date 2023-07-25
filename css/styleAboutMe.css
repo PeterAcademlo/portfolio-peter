@@ -351,6 +351,9 @@ section{
 }
 
 @media (max-width: 516px){
+    .about-me{
+        background-image: url(../img/fondis1.jpg);
+    }
     .about-container1 p{
         max-width: 450px;
     }
