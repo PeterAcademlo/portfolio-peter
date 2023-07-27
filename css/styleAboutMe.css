@@ -75,6 +75,21 @@ section{
     animation-duration: 1s;
 }
 
+.about-container1 p{
+    animation: slideInLeft;
+    animation-duration: 1s;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background: rgb(20, 36, 42, 0.9);
+    transition: .5s ease;
+}
+
+.about-container1 p:hover{
+    transition: .5s ease;
+    scale: calc(1.01);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
 .about-content1{
     border: .2rem solid var(--bg-color);
     box-shadow: 1px 1px 10px var(--main-color);
