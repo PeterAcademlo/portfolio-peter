@@ -689,10 +689,19 @@ span{
     html{
         font-size: 55%;
     }
+    .navbar a{
+        font-size: 1.7rem;
+        color: var(--text-color);
+        padding: .5rem;
+        margin-left: 1rem;
+    }
     .about-img img{
         width: 35vw;
         position: relative;
         bottom: 10rem;
+    }
+    .portfolio-layer h4{
+        font-size: 2.2rem;
     }
 }
 
