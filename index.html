@@ -9,15 +9,15 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/svg+xml" href="/img/logopalabra.png" />
-    <title>PORTFOLIO</title>
+    <title>PORTFOLIO</title> 
 
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js" defer></script>
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <div id="particles-js"></div>
+    <div id="particles-j"></div>
 
     <!--header design-->
 
@@ -31,9 +31,10 @@
         <nav class="navbar">
             <a href="#home" class="active">INICIO</a>
             <a href="#about">Acerca de mi</a>
-            <a href="#services">Servicios</a>
+            <a href="#services">Educación</a>
+            <a href="#technologies">Tecnologías</a>
             <a href="#portfolio">Proyectos</a>
-            <a href="#contact">Contactame</a>
+            <a href="#contact">Contáctame</a>
         </nav>
     </header>
 
@@ -46,7 +47,8 @@
             <h3><span class="multiple-text"></span></h3>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/julian-capillo-769188272/"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/PeterAcademlo"><i class="bx bxl-gitlab"></i></a>
+                <a href="https://github.com/PeterAcademlo"><i class='bx bxl-github'></i></a>
+                <a href="https://gitlab.com/PeterAcademlo"><i class='bx bxl-gitlab'></i></a>
                 <a href="https://mail.google.com/mail/u/0/#inbox"><i class="bx bxl-gmail"></i></a>
             </div>
             <a href="/public/CV-peter-capillo.pdf" class="btn"> Descargar CV</a>
@@ -86,10 +88,8 @@
     </section>
 
     <!--services section design-->
-
     <section class="services" id="services">
         <h2 class="heading">Estudios &</h2>
-
         <div class="services-container">
             <div class="services-box">
                 <h3>Fundamentos de Desarrollo Web</h3>
@@ -121,7 +121,9 @@
                 </div>
             </div>
         </div>
+    </section>
 
+    <section class="technologies" id="technologies">
         <h2 class="heading"><span> Tecnologías</span></h2>
         <div class="services-container2">
             <div class="services-box2">
@@ -133,16 +135,12 @@
                 <h3>HTML</h3>
             </div>
             <div class="services-box2">
-                <i class="bx bxl-css3 bx-tada" style="color: #00fff8"></i>
+                <i class="bx bxl-css3 bx-tada" style="color: #9701dd"></i>
                 <h3>CSS</h3>
             </div>
             <div class="services-box2">
-                <i class="bx bxl-react bx-tada bx-rotate-180" style="color: #01a49e"></i>
+                <i class="bx bxl-react bx-tada bx-rotate-180" style="color: #00bbff"></i>
                 <h3>React</h3>
-            </div>
-            <div class="services-box2">
-                <i class="bx bxl-redux bx-tada" style="color: #9701dd"></i>
-                <h3>Redux</h3>
             </div>
             <div class="services-box2">
                 <i class="bx bxl-nodejs bx-rotate-180 bx-tada" style="color: #05fa98"></i>
@@ -151,6 +149,23 @@
             <div class="services-box2">
                 <i class="bx bxl-postgresql bx-tada" style="color: #00236f"></i>
                 <h3>PostgreSQL</h3>
+            </div>
+            <div class="services-box2">
+                <i class="bx bx-tada" icon="ant-design:ant-cloud-outlined" style="color: #90fff6"><iconify-icon
+                        icon="ant-design:ant-cloud-outlined"></iconify-icon></i>
+                <h3>Ant-Design</h3>
+            </div>
+            <div class="services-box2">
+                <i class="bx bxl-gitlab bx-tada" style="color: #ff8800"></i>
+                <h3>GitLab</h3>
+            </div>
+            <div class="services-box2">
+                <i class="bx bxl-github bx-tada" style="color: #ffffff"></i>
+                <h3>GitHub</h3>
+            </div>
+            <div class="services-box2">
+                <i class="bx bxl-git bx-tada" style="color: #ff3c01"></i>
+                <h3>Git</h3>
             </div>
         </div>
     </section>
@@ -246,18 +261,15 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contácta<span>Me</span></h2>
 
-        <form action="https://formsubmit.co/no15mires@gmail.com" method="POST">
+        <form action="https://formsubmit.co/no15mires@gmail.com" method="POST" >
             <div class="input-box">
                 <input type="text" placeholder="nombre completo" name="name" />
-                <input type="email" placeholder="Dirección de correo electrónico" name="email" />
-            </div>
-            <div class="input-box">
+                <input type="email" placeholder="Dirección de correo electrónico" name="email" />          
                 <input type="number" placeholder="número de teléfono" name="mobile" />
                 <input type="text" placeholder="asunto del Email" name="subject" />
+                <textarea name="comments" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
             </div>
-            <textarea name="comments" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
             <input type="submit" value="Enviar" class="btn" />
-
             <input type="hidden" name="_text" value="https://portfolio-peter.netlify.app/" />
             <input type="hidden" name="_captcha" value="false" />
         </form>

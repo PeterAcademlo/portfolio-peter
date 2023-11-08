@@ -30,24 +30,24 @@ body{
     color: var(--text-color);
 }
 
-section{
-    min-height: 80vh;
-    padding: 0rem 4% 2rem;
-}
-
 #particles-js{
     position:fixed;
     width: 100%;
     height: 100%;
     top: 0;
-    z-index: 0;
+    z-index: 0.01;
+}
+
+section{
+    min-height: 80vh;
+    padding: 0rem 4% 2rem;
 }
 
 .header{
     position: fixed;
     top:0;
     left: 0;
-    width: 100%;
+    width: 96%;
     padding: 2rem 9%;
     display: flex;
     justify-content: space-between;
@@ -137,7 +137,7 @@ section{
     background:linear-gradient(to bottom, var(--bg-color),black);
     filter: grayscale(20%);
     width: 30vw;
-    margin-top: 9rem;
+    margin-top: 12rem;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -211,6 +211,7 @@ span{
     border: 2px solid var(--main-color);
     letter-spacing: .1rem;
     transition: .5s ease;
+    z-index: 103;
 }
 
 .btn:hover{
@@ -234,7 +235,8 @@ span{
 .about-img img{
     width: 25vw;
     position: relative;
-    bottom: 10rem;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
 }
 
 .heading{
@@ -286,6 +288,7 @@ span{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 10rem;
 }
 
 /* services 1 */
@@ -304,7 +307,6 @@ span{
 }
 
 .services-container .services-box{
-    flex: 1 1 10rem;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -312,6 +314,7 @@ span{
     box-shadow: 1px 1px 10px var(--main-color);
     transition: .5s ease;
     max-width: 400px;
+    height: 270px;
 }
 
 .services-container .services-box:hover {
@@ -373,27 +376,38 @@ span{
 }
 
 /* services 2 */
+/*----technologies----*/
+.technologies{
+    background-image: url(../img/F11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.technologies h2{
+    margin-bottom: 9rem;
+    padding-top: 10rem;
+}
+
 .services-container2{
     font-family: 'Jura', sans-serif;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 19rem;
+    gap: 2rem;
+    display: grid;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 5rem;
-    margin-bottom: 10rem;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 12rem;
 }
 
 .services-container2 .services-box2{
-    flex: 1 1rem;
     background: transparent;
-    padding: .2rem .2rem .2rem;
+    padding: 3rem 0;
     border-radius: 2rem;
     text-align: center;
     border: .1rem solid var(--bg-color);
     box-shadow: 1px 1px 10px var(--main2-color);
     transition: .5s ease;
     max-width: 400px;
-    
 }
 
 .services-container2 .services-box2:hover {
@@ -403,7 +417,7 @@ span{
 }
 
 .services-box2 i{
-    font-size: 7rem;
+    font-size: 9rem;
     color: transparent;
     padding: 2rem;
 }
@@ -413,7 +427,6 @@ span{
     margin-bottom: 2rem;
 }
 
-/*--------*/
 /*---------slider---------*/
 .slider{
     display: flex;
@@ -509,10 +522,11 @@ span{
 }
 /*--------*/
 .portfolio{
-    background-image: url(../img/F11.jpg);
+    background-image: url(../img/F22.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 10rem;
 }
 
 .portfolio h2{
@@ -599,7 +613,7 @@ span{
 }
 
 .contact{
-    background-image: url(../img/F22.jpg);
+    background-image: url(../img/F11.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -620,6 +634,7 @@ span{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 100;
 }
 
 .contact form .input-box input,
@@ -631,6 +646,7 @@ span{
     background: var(--second-bg-color);
     border-radius: 0.8rem;
     margin: 0.7rem 0;
+    z-index: 100;
 }
 
 .contact form .input-box input{
@@ -639,20 +655,36 @@ span{
 
 .contact form textarea{
     resize: none;
+    z-index: 100;
 }
 
 .contact form .btn{
-    margin-top: 2rem;
+    margin-top: 5rem;
     cursor: pointer;
+    position: relative;
+}
+
+.btn2{
+    display:inline-block;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    border-radius: 4rem;
+    font-size: 1.9rem;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    letter-spacing: .1rem;
+    transition: .5s ease;
 }
 
 .footer{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background-color: #000000;
+    z-index: 100;
 }
 
 .footer-text{
@@ -688,10 +720,33 @@ span{
 
 /*==breackpoints====*/
 
+@media (max-width: 1600px){
+    .services-container .services-box{
+        height: 250px;
+    }
+    .services-container{
+        gap: 2rem;
+    }
+    .portfolio h2{
+        padding-top: 8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .portfolio-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 2rem;
+    }
+    .portfolio-box{
+        height: 280px;
+    }
+}
+
 @media (max-width: 1480px){
     .home-img{
         position: relative;
-        padding: 2rem;
+        padding: 2rem 0;
         left: 4rem;
         bottom: 5rem;
     }
@@ -700,6 +755,13 @@ span{
 @media (max-width: 1400px){
     section{
         padding: 0rem 2% 2rem;
+    }
+    .services-container2{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .services-box2:nth-child(9) {
+        grid-column: 3 / 2;
+        grid-row: 3/2;
     }
 }
 
@@ -760,6 +822,16 @@ span{
        }
     .services-box{
         min-width: 450px;
+    }
+}
+
+@media (max-width: 1000px){
+    .services-container2{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 10rem;
+    }
+    .services-box2:nth-child(10) {
+        grid-column: 2 / 3;
     }
 }
 
@@ -861,6 +933,10 @@ span{
     .services-box p{
         height: 60px;
     }
+    .services-container2{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 6rem;
+    }
 }
 
 @media (max-width: 617px){
@@ -881,14 +957,21 @@ span{
     .about-img img{
         bottom: 2rem;
     }
+    .footer{
+        flex-direction: column;
+        gap: 0.7rem;
+    }
 }
 
 @media (max-width: 516px){
+    section{
+        padding: 0 1rem;
+    }
     .services{
-        padding: 0rem 2% 0rem;
+        padding: 0rem .1% 0rem;
     }
     .services-box{
-        min-width: 360px;
+        min-width: 350px;
     }
     .services-container2{
         margin-bottom: 0rem;
@@ -902,6 +985,9 @@ span{
     }
     .about-img img{
         bottom: 2rem;
+    }
+    .contact form{
+        margin: 0;
     }
 }
 
@@ -939,16 +1025,12 @@ span{
     }
     .footer p{
         text-align: center;
-        margin-top: 2rem;
     }
 }
 
 @media (max-width: 365px){
     .services{
         padding: 0rem 3% 0rem;
-    }
-    .services-box{
-        min-width: 300px;
     }
     .services-box h3 {
         width: 300px;
@@ -968,7 +1050,6 @@ span{
     }
     .footer p{
         text-align: center;
-        margin-top: 2rem;
     }
 }
 
