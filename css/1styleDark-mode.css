@@ -1,0 +1,179 @@
+:root {
+  --bg-color: #14242a;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+  --main2-color: #00ff6e;
+}
+
+/* Modo Oscuro */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10rem;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch i {
+  font-size: 1.9rem;
+  margin-left: 1rem;
+}
+
+.slider-dm {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--second-bg-color);
+  border-radius: 2rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0 0.5rem var(--main-color);
+}
+
+.slider-dm::before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background: var(--text-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 2;
+}
+input:checked + .slider-dm {
+  background: var(--second-bg-color);
+}
+input:checked + .slider-dm::before {
+  -wekibkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.switch i {
+  position: relative;
+  right: 7px;
+  z-index: 1;
+}
+
+/* content-dack-mode */
+body.dark .contact,
+body.dark .portfolio,
+body.dark .slider,
+body.dark .technologies,
+body.dark .services,
+body.dark .about,
+body.dark .home {
+  background-image: none;
+  background: rgb(255, 255, 255);
+}
+
+.dark span,
+.dark .btn,
+.dark .about-content h2,
+.dark .about-content h3,
+.dark .navbar a,
+.dark .logo,
+* .dark {
+  color: var(--bg-color);
+}
+
+.dark .navbar a {
+  border: 2px solid var(--text-color);
+  box-shadow: 0 0 1rem var(--text-color);
+}
+
+.dark .navbar a:hover {
+  box-shadow: 0 0 1rem var(--text-color);
+  background: var(--text-color);
+  color: #14242a;
+}
+
+.dark .navbar a:hover,
+.dark .navbar a.active {
+  background-color: var(--text-color);
+}
+
+.dark .conatainer-links,
+.dark .about-content {
+  color: var(--text-color);
+}
+
+/*contact*/
+.dark .services-container2 .services-box2:hover {
+  background: var(--bg-color);
+}
+
+.dark .services-box {
+  color: var(--text-color);
+  background: var(--second-bg-color);
+}
+
+.dark .services-box:hover {
+  color: var(--bg-color);
+  background: var(--text-color);
+}
+
+.dark .btn-services2:hover {
+  color: var(--bg-color);
+}
+
+/*contact*/
+.dark .contact form .input-box input,
+.dark .contact form textarea {
+  background: var(--main-color);
+  color: black;
+}
+
+/*footer*/
+.dark .footer-icontop a {
+  background: var(--text-color);
+}
+.dark .footer-icontop a:hover {
+  box-shadow: 0 0rem 1rem var(--bg-color);
+}
+
+.dark .header {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 238, 255, 1) 54%
+  );
+}
+.dark .footer {
+  background: rgb(0, 238, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 238, 255, 1) 46%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+@media (max-width: 1173px) {
+  .switch {
+    width: 55px;
+    height: 30px;
+  }
+  .slider-dm {
+    left: 1px;
+  }
+  .slider-dm::before {
+    height: 21px;
+    width: 21px;
+    left: 3px;
+  }
+}

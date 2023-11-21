@@ -8,8 +8,9 @@
     <!--box icons-->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/1styleDark-mode.css" />
     <link rel="icon" type="image/svg+xml" href="/img/logopalabra.png" />
-    <title>PORTFOLIO</title> 
+    <title>PORTFOLIO</title>
 
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -20,17 +21,29 @@
     <div id="particles-js"></div>
 
     <!--header design-->
+    <div class="pulser">
+        <img class="img-logo" src="img/logopet.jpg" alt="" />
+    </div>
 
     <header class="header">
-        <a href="#" class="logo">
-            <img class="img-logo" src="img/logopet.jpg" alt="" /> PORTAFOLIO
-        </a>
+        <div class="c1">
+            <!-- Modo Oscuro -->
+            <label class="switch" id="darkModeSwitch">
+                <input type="checkbox" id="input">
+                <span class="slider-dm"></span>
+                <i class='bx bxs-moon bx-tada' style='color:#ffffff'  ></i>
+                <i class='bx bxs-sun bx-spin' ></i>
+            </label>
+            <a href="#" class="logo">
+                PORTAFOLIO
+            </a>
+        </div>
 
         <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">INICIO</a>
-            <a href="#about">Acerca de mi</a>
+            <a href="#about">Acerca de mí</a>
             <a href="#services">Educación</a>
             <a href="#technologies">Tecnologías</a>
             <a href="#portfolio">Proyectos</a>
@@ -70,8 +83,8 @@
                 ¡Hola! Soy un joven de 18 años apasionado por la programación, el
                 diseño y el deporte.
                 <br />
-                Los lenguajes que más utilizo son JavaScript, seguido de react.
-                Tambien utilizo Nodejs y PostgreSQL por parte del back-end, y en
+                Los lenguajes que más utilizo son JavaScript, seguido de React.
+                Tambien utilizo Nodejs y PostgreSQL por parte del Back-End, y en
                 cuanto a lenguajes de marcado HTML5 y CSS3.
                 <br />
                 Soy una persona autogestiva, sociable, proactiva, me gusta trabajar en
@@ -115,7 +128,7 @@
             <div class="services-box s4">
                 <h3>Full Stack Web</h3>
                 <div class="service-box-contenedor">
-                    <a href="https://certificates.academlo.com/en/verify/23149365699076?ref=email"
+                    <a href="https://certificates.academlo.com/en/verify/23149365699076?ref=email" 
                         class="btn-services2">
                         MAS información</a>
                 </div>
@@ -261,10 +274,10 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contácta<span>Me</span></h2>
 
-        <form action="https://formsubmit.co/no15mires@gmail.com" method="POST" >
+        <form action="https://formsubmit.co/no15mires@gmail.com" method="POST">
             <div class="input-box">
                 <input type="text" placeholder="nombre completo" name="name" />
-                <input type="email" placeholder="Dirección de correo electrónico" name="email" />          
+                <input type="email" placeholder="Dirección de correo electrónico" name="email" />
                 <input type="number" placeholder="número de teléfono" name="mobile" />
                 <input type="text" placeholder="asunto del Email" name="subject" />
                 <textarea name="comments" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
@@ -282,7 +295,7 @@
         </div>
 
         <div class="footer-text">
-            <p>• Copyright ©2023 | All rights reserved •</p>
+            <p>• ©2023 •</p>
         </div>
 
         <div class="footer-icontop">

@@ -61,6 +61,18 @@ const typed = new Typed(".multiple-text", {
     loop: true
 });
 
+// Dark-Mode
+const darkModeSwitch = document.getElementById('darkModeSwitch');
+const body = document.body;
+
+darkModeSwitch.addEventListener('change', () => {
+    if (body.classList.contains('dark')) {
+        body.classList.remove('dark');
+    } else {
+        body.classList.add('dark');
+    }
+});
+
 
 
 
