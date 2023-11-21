@@ -83,9 +83,9 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
-.pulser:hover{
+.pulser:hover {
   transform: rotate(360deg) scale(1.5);
 }
 .pulser::after {
@@ -173,6 +173,7 @@ section {
 }
 
 .home-img img {
+  position: relative;
   border-radius: 1rem 0 1rem 0;
   transition: 1s ease;
   z-index: 10;
@@ -182,6 +183,7 @@ section {
   background: transparent;
   animation: floatImage 4s ease-in-out infinite;
   transition: 0.5s ease;
+  z-index: 200000;
 }
 .home-img img:hover {
   scale: calc(1.011);
@@ -817,10 +819,21 @@ span {
 
 @media (max-width: 1340px) {
   .header {
-    padding: 2rem 2.8%;
+    justify-content: space-around;
+    padding: 1rem 3%;
+  }
+  .navbar a{
+    margin-left: 1rem;
+  }
+  .navbar a{
+    margin-left: .1px;
   }
   section {
     padding: 0rem 4% 2rem;
+  }
+  .pulser {
+    left: 90%;
+    top: 86%;
   }
   .home-content h1 {
     font-size: 5rem;
